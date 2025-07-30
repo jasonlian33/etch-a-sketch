@@ -38,7 +38,13 @@ function addHoverEffect() {
 const resetButton = document.querySelector(".reset-button");
 resetButton.addEventListener('click', function(){
     let newSize = prompt("Enter a number for the new grid size");
-    defaultSize = newSize;
+    if (isNaN(newSize) || newSize < 1 || newSize > 100) {
+        alert("Invalid input! Please enter a number between 1 and 100.");
+        return;
+    }
+    newSize = parseInt(newSize);
+
+    createGrid(newSize);
 })
 
 
