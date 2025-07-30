@@ -5,7 +5,7 @@ console.log(container);
 
 
 function createRow(){
-    for (let i = 0; i < 16; i++){
+    for (let i = 0; i < 50; i++){
         const row = document.createElement("div");
         row.classList.add("row");
         container.appendChild(row);
@@ -17,7 +17,7 @@ createRow();
 const row = document.querySelectorAll(".row");
 function createGrid(){
     row.forEach(row =>{
-        for (let i = 0; i < 16; i++){
+        for (let i = 0; i < 50; i++){
             const column = document.createElement("div");
             column.classList.add("column");
             //column.textContent = "Hi"

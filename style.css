@@ -1,19 +1,17 @@
 .container{
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 90vmin;
+    height: 90vmin;
 }
 
 .row{
     display: flex;
+    flex: 1;
 
 }
-
-.column{
-    width: 40px; 
-    height: 40px; 
-    background-color: white; 
-    border: 1px solid; 
-    
+.column {
+    flex: 1;       /* Each column fills equal width */
+    aspect-ratio: 1 / 1;  /* Makes it square */
+    border: 1px solid;
 }
 
 body {
