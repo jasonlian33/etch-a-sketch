@@ -1,3 +1,6 @@
+.reset-button{
+    display: flex;
+}
 .container{
     width: 90vmin;
     height: 90vmin;
@@ -9,7 +12,7 @@
 
 }
 .column {
-    flex: 1;       /* Each column fills equal width */
+    flex: 1;      
     aspect-ratio: 1 / 1;  /* Makes it square */
     border: 1px solid;
 }
