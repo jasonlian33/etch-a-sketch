@@ -27,6 +27,22 @@ function createGrid(){
 }
 
 createGrid();
+const columns = document.querySelectorAll(".column");
+columns.forEach(column => {
+    column.addEventListener("mouseover", () => {
+    console.log("Mouse entered!");
+    column.style["background-color"] = "grey";
+    });
+});
+
+/*
+columns.forEach(column => {
+    column.addEventListener("mouseout", () => {
+    console.log("Mouse exit!");
+    });
+});
+*/
+
 
 
 
