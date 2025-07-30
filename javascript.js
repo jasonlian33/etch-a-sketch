@@ -24,11 +24,20 @@ function createGrid(size) {
 
 createGrid(defaultSize);
 
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
 function addHoverEffect() {
     const columns = document.querySelectorAll(".column");
     columns.forEach(column => {
         column.addEventListener("mouseover", () => {
-            column.style["background-color"] = "grey";
+            column.style["background-color"] = getRandomColor();
         });
     });
 }
